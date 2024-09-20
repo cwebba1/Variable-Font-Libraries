@@ -1,0 +1,941 @@
+/* 091824 variable-fonts.css */
+/* https://fonts.google.com/variablefonts */
+
+@charset "UTF-8";
+
+
+/** - – - – - – - – - – - – - – - – [ Google Variable Fonts ] - – - – - – - – - – - – - – - – */
+
+/**
+Variable Font Axes:
+slnt 		Slant
+wght		Weight
+FLAR	Flare
+VOLM	Volume
+opsz 	Optical Size
+
+Volume (VOLM):
+Expands and exaggerates details of a typeface to emphasize the personality. Understood in a percentage amount, it goes from a neutral state (0%) to a maximum level (100%).
+
+Optical Size:
+Adapt the style to specific text sizes. At smaller sizes, letters typically become optimized for more legibility. At larger sizes, optimized for headlines, with more extreme weights and widths. In CSS this axis is activated automatically when it is available.
+
+NOTE: Standard axes are lowercase. Custom axes are in CAPS.
+*/
+
+/** Commissioner
+Commissioner-VariableFont_FLAR,VOLM,slnt,wght.woff2
+	
+Axes	Default	Min	Max		Step
+slnt		0		-12	0		1
+wght		400		100	900		1
+FLAR	0		0	100		1
+VOLM	0		0	100		1
+*/
+
+@font-face {
+  font-family: 'Commissioner';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Commissioner/Commissioner-VariableFont_FLAR,VOLM,slnt,wght.woff2)
+  format('woff2-variations');
+  }
+
+.commissioner-<uniquifier> {
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+}
+
+.commissioner01 {
+  font-family: "Commissioner",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "FLAR" 0,
+    "VOLM" 0;
+}
+
+.commissioner02 {
+  font-family: "Commissioner",sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal; /* italic is set with a slant */
+  font-variation-settings:
+    "slnt" -12,
+    "FLAR" 50,
+    "VOLM" 100;
+}
+
+/** Encode_Sans
+EncodeSans-VariableFont_wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+wdth		100		75	125		0.1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: "EncodeSans";
+  font-stretch: 75% 125%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Encode_Sans/EncodeSans-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.EncodeSans01 {
+  font-family: "EncodeSans",sans-serif;
+  font-variation-settings: 'wght' 600, 'wdth' 100;
+/*  font-style: normal;*/
+  font-weight: 100;
+font-variation-settings:
+"wdth" 75;
+  font-stretch: 75% 125%; /* Required by Chrome */
+  font-stretch: 75%;
+}
+
+.EncodeSans02 {
+  font-family: "EncodeSans",sans-serif;
+/*  font-variation-settings: 'wght' 200, 'wdth' 125;*/
+  font-optical-sizing: auto;
+  font-weight: 600;
+font-variation-settings:
+"wdth" 100;
+}
+
+
+/*Figtree
+Figtree-Italic-VariableFont_wght.woff2
+Figtree-VariableFont_wght.woff2 
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		300	900		1
+*/
+
+@font-face {
+  font-family: 'Figtree';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Figtree/Figtree-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'Figtree-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 300..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Figtree/Figtree-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.figtree01 {
+  font-family: "Figtree",sans-serif;
+  font-style: normal;
+  font-variation-settings: 'wght' 300;
+}
+
+.figtree02 {
+  font-family: "Figtree-Italic",sans-serif;
+  font-style: italic;
+  font-variation-settings: 'wght' 900;
+}
+
+/*Hanken_Grotesk
+HankenGrotesk-Italic-VariableFont_wght.woff2
+HankenGrotesk-VariableFont_wght.woff2 
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+
+@font-face {
+  font-family: 'Hanken_Grotesk';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Hanken_Grotesk/HankenGrotesk-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'Hanken_Grotesk-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Hanken_Grotesk/HankenGrotesk-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.Hanken-Grotesk01 {
+  font-family: "Hanken_Grotesk",sans-serif;
+  font-style: normal;
+  font-variation-settings: 'wght' 100;
+}
+
+.Hanken-Grotesk02 {
+  font-family: "Hanken_Grotesk-Italic",sans-serif;
+  font-style: italic;
+  font-variation-settings: 'wght' 900;
+}
+
+/* Inter
+Inter-Italic-VariableFont_opsz,wght.woff2
+Inter-VariableFont_opsz,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+opsz		14		14	32		0.1
+wght		400		100	900		1
+ */
+
+@font-face {
+  font-family: 'Inter-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Inter/Inter-Italic-VariableFont_opsz,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'Inter';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Inter/Inter-VariableFont_opsz,wght.woff2)
+  format('woff2-variations');
+  }
+
+.inter01 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter02 {
+  font-family: "Inter-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+/* Inter_Tight
+InterTight-Italic-VariableFont_wght.woff2
+InterTight-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'InterTight-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Inter_Tight/InterTight-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'InterTight';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Inter_Tight/InterTight-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.inter-tight-01 {
+  font-family: "InterTight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-tight-02 {
+  font-family: "InterTight-Italic", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Libre_Franklin
+LibreFranklin-Italic-VariableFont_wght.woff2
+LibreFranklin-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'LibreFranklin-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'LibreFranklin';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.libre-franklin-01 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.libre-franklin-02 {
+  font-family: "LibreFranklin-Italic", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Montserrat
+Montserrat-Italic-VariableFont_wght.woff2
+Montserrat-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'Montserrat-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Montserrat/Montserrat-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'Montserrat';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Montserrat/Montserrat-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.montserrat-01 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.montserrat-02 {
+  font-family: "Montserrat-Italic", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+/* Noto_Sans
+NotoSans-Italic-VariableFont_wdth,wght.woff2
+NotoSans-VariableFont_wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wdth		100		62.5	100		0.1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'NotoSans-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'NotoSans';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.noto-sans-01 {
+  font-family: "NotoSans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noto-sans-02 {
+  font-family: "NotoSans-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Noto_Sans_Display
+NotoSansDisplay-Italic-VariableFont_wdth,wght.woff2
+NotoSansDisplay-VariableFont_wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wdth		100		62.5	100		0.1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'NotoSansDisplay-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Noto_Sans_Display/NotoSansDisplay-Italic-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'noto-sans-display';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Noto_Sans_Display/NotoSansDisplay-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.noto-sans-display-01 {
+  font-family: "noto-sans-display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 86;
+}
+
+.noto-sans-display-02 {
+  font-family: "NotoSansDisplay-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Nunito_Sans
+NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.woff2
+NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+opsz		12		6	12		0.1		// Optical Size (opsz)
+wdth		100		75	125		0.1
+wght		400		200	1000	1
+YTLC	500		440	540		1		// Lowercase Height
+https://fonts.google.com/specimen/Nunito+Sans/tester
+*/
+
+@font-face {
+  font-family: 'NunitoSans-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 200..1000; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Nunito_Sans/NunitoSans-Italic-VariableFont_YTLC,opsz,wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'NunitoSans';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 200..1000; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.nunito-sans-02 {
+  font-family: "NunitoSans-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 125,
+    "YTLC" 440;
+}
+
+.nunito-sans-01 {
+  font-family: "NunitoSans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/* Open_Sans
+OpenSans-Italic-VariableFont_wdth,wght.woff2
+OpenSans-VariableFont_wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wdth		100		75	100		0.1
+wght		400		300	800		1
+*/
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 300..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'OpenSans';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 300..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.open-sans-01 {
+  font-family: "OpenSans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 90;
+}
+
+.open-sans-02 {
+  font-family: "OpenSans-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* Pathway_Extreme
+PathwayExtreme-Italic-VariableFont_opsz,wdth,wght.woff2
+PathwayExtreme-VariableFont_opsz,wdth,wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+opsz		12		8	144		0.1
+wdth		100		75	100		0.1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'PathwayExtreme-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Pathway_Extreme/PathwayExtreme-Italic-VariableFont_opsz,wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'PathwayExtreme';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Pathway_Extreme/PathwayExtreme-VariableFont_opsz,wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.pathway-extreme-01 {
+  font-family: "PathwayExtreme", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.pathway-extreme-02 {
+  font-family: "PathwayExtreme-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 85;
+}
+
+/* Plus_Jakarta_Sans
+PlusJakartaSans-Italic-VariableFont_wght.woff2
+PlusJakartaSans-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		200	800	1
+*/
+
+@font-face {
+  font-family: 'PlusJakartaSans-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 200..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 200..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.plus-jakarta-sans-01 {
+  font-family: "PlusJakartaSans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.plus-jakarta-sans-02 {
+  font-family: "PlusJakartaSans-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Raleway
+Raleway-Italic-VariableFont_wght.woff2
+Raleway-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'Raleway-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Raleway/Raleway-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'Raleway';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Raleway/Raleway-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.raleway-01 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-02 {
+  font-family: "Raleway-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+}
+
+Red_Hat_Display
+RedHatDisplay-Italic-VariableFont_wght.woff2
+RedHatDisplay-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		300	900		1
+*/
+
+@font-face {
+  font-family: 'RedHatDisplay-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 300..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Red_Hat_Display/RedHatDisplay-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'RedHatDisplay';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 300..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.red-hat-display-01 {
+  font-family: "RedHatDisplay", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.red-hat-display-02 {
+  font-family: "RedHatDisplay-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Roboto_Condensed
+RobotoCondensed-Italic-VariableFont_wght.woff2
+RobotoCondensed-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'RobotoCondensed-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'RobotoCondensed';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.roboto-condensed-01 {
+  font-family: "RobotoCondensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.roboto-condensed-02 {
+  font-family: "RobotoCondensed-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Roboto_Flex
+RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.woff2
+
+14 styles
+Axes	Default	Min	Max		Step
+opsz		14		8	144		0.1		Optical Size: Auto
+slnt		0		-10	0		1		Slant: 0 – -10
+wdth		100		25	151		0.1		Width: 100
+wght		400		100	1000	1		Weight: 100 – 1000
+GRAD	0		-200	150		1		Grade: 0
+XOPQ	96		27	175		1		Thick Stroke: 96
+XTRA	468		323	603		1		Counter Width: 468
+YOPQ	79		25	135		1		Thin Stroke: 79
+YTAS	750		649	854		1		Ascender Height: 750
+YTDE	-203		-305	-98		1		Descender Depth: -203
+YTFI		738		560	788		1		Figure Height: 738
+YTLC	514		416	570		1		Lowercase Height: 514
+YTUC	712		528	760		1		Uppercase Height: 712
+*/
+
+@font-face {
+  font-family: 'RobotoFlex';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..1000; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.woff2)
+  format('woff2-variations');
+  }
+
+.roboto-flex-01 {
+  font-family: "RobotoFlex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" -10,
+    "wdth" 100,
+    "GRAD" 50,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 825,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 570,
+    "YTUC" 712;
+}
+
+.roboto-flex-02 {
+  font-family: "RobotoFlex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 150,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+/* Schibsted_Grotesk
+SchibstedGrotesk-Italic-VariableFont_wght.woff2
+SchibstedGrotesk-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		400	900		1
+*/
+
+@font-face {
+  font-family: 'SchibstedGrotesk-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-weight: 400..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Schibsted_Grotesk/SchibstedGrotesk-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 400..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.schibsted-grotesk-01 {
+  font-family: "SchibstedGrotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.schibsted-grotesk-02 {
+  font-family: "SchibstedGrotesk-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* - – - – - – - – - – - – - – - – [ Ubuntu Variable Fonts ] - – - – - – - – - – - – - – - – */
+
+/* Ubuntu
+Ubuntu-Italicwdthwght.woffUbuntuMono[wght]-latin-v0.869.woff2Ubuntuwdthwght.woff
+*/
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Ubuntu/Ubuntuwdthwght.woff2)
+  format('woff2-variations');
+  }
+  
+@font-face {
+  font-family: 'Ubuntu-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 100..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Ubuntu/Ubuntu-Italicwdthwght.woff2)
+  format('woff2-variations');
+  }
+
+.ubuntu-01 {
+  font-family: "Ubuntu", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ubuntu-02 {
+  font-family: "Ubuntu-Italic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Mono';
+  font-style: normal;
+  font-weight: 100..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Ubuntu/UbuntuMono[wght]-latin-v0.869.woff2) 
+  format('woff2-variations');
+  }
+
+.ubuntu-mono-01 {
+  font-family: "Ubuntu-Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ubuntu-mono-02 {
+  font-family: "Ubuntu-Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+h2 { margin:1.5em 0 0;}
+
+
