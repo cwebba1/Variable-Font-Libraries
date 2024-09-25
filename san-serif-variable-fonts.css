@@ -43,17 +43,6 @@ VOLM	0		0	100		1
   format('woff2-variations');
   }
 
-.commissioner-<uniquifier> {
-  font-family: "Commissioner", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "FLAR" 0,
-    "VOLM" 0;
-}
-
 .commissioner01 {
   font-family: "Commissioner",sans-serif;
   font-optical-sizing: auto;
@@ -321,6 +310,81 @@ wght		400		100	900		1
   font-style: italic;
 }
 
+/* Material_Symbols
+	/Material_Symbols_Outlined/MaterialSymbolsOutlined-VariableFont_FILL,GRAD,opsz,wght.woff2
+
+	/Material_Symbols_Rounded/MaterialSymbolsRounded-VariableFont_FILL,GRAD,opsz,wght.woff2
+
+	/Material_Symbols_Sharp/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.woff2
+
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+*/
+
+@font-face {
+  font-family: 'MaterialSymbols_Outlined';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Material_Symbols/Material_Symbols_Outlined/MaterialSymbolsOutlined-VariableFont_FILL,GRAD,opsz,wght.woff2)
+  format('woff2-variations');
+  }
+
+.material-symbols-outlined {
+  font-family: "MaterialSymbols_Outlined", sans-serif;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* Merriweather_Sans
+MerriweatherSans-Italic-VariableFont_wght.woff2
+MerriweatherSans-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+ital		0		0	1		1
+wght		400		300	800		1
+*/
+
+@font-face {
+  font-family: 'MerriweatherSans-Italic';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 300..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Merriweather_Sans/MerriweatherSans-Italic-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 300..800; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.merriweather-01 {
+  font-family: "MerriweatherSans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-02 {
+  font-family: "MerriweatherSans-Italic", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+
 /* Montserrat
 Montserrat-Italic-VariableFont_wght.woff2
 Montserrat-VariableFont_wght.woff2
@@ -553,6 +617,37 @@ wght		400		300	800		1
   font-variation-settings:
     "wdth" 100;
 }
+
+/* Outfit
+Outfit-VariableFont_wght.woff2
+
+Axes	Default	Min	Max		Step
+wght		400		100	900		1
+*/
+
+@font-face {
+  font-family: 'Outfit';
+  font-stretch: 100%; /*  min and max value for the width axis, expressed as percentage */
+  font-style: normal;
+  font-weight: 100..900; /*  min and max value for the weight axis */
+  src: url(Variable-Sans-Serif-Fonts//Outfit/Outfit-VariableFont_wght.woff2)
+  format('woff2-variations');
+  }
+
+.outfit-01 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.outfit-02 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 /* Pathway_Extreme
 PathwayExtreme-Italic-VariableFont_opsz,wdth,wght.woff2
